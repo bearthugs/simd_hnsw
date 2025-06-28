@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/cmake_install.cmake",
+		"/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/benchmarks/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
