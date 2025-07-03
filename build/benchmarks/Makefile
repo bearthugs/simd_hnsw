@@ -117,42 +117,80 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-benchmarks/CMakeFiles/benchmark.dir/rule:
-	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark.dir/rule
-.PHONY : benchmarks/CMakeFiles/benchmark.dir/rule
+benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule
+.PHONY : benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule
 
 # Convenience name for target.
-benchmark: benchmarks/CMakeFiles/benchmark.dir/rule
-.PHONY : benchmark
+benchmark_hnswlib: benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule
+.PHONY : benchmark_hnswlib
 
 # fast build rule for target.
-benchmark/fast:
-	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/build
-.PHONY : benchmark/fast
+benchmark_hnswlib/fast:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/build
+.PHONY : benchmark_hnswlib/fast
 
-benchmark.o: benchmark.cpp.o
-.PHONY : benchmark.o
+# Convenience name for target.
+benchmarks/CMakeFiles/benchmark_brute_force.dir/rule:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark_brute_force.dir/rule
+.PHONY : benchmarks/CMakeFiles/benchmark_brute_force.dir/rule
+
+# Convenience name for target.
+benchmark_brute_force: benchmarks/CMakeFiles/benchmark_brute_force.dir/rule
+.PHONY : benchmark_brute_force
+
+# fast build rule for target.
+benchmark_brute_force/fast:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/build
+.PHONY : benchmark_brute_force/fast
+
+benchmark_brute_force.o: benchmark_brute_force.cpp.o
+.PHONY : benchmark_brute_force.o
 
 # target to build an object file
-benchmark.cpp.o:
-	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmark.cpp.o
-.PHONY : benchmark.cpp.o
+benchmark_brute_force.cpp.o:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/benchmark_brute_force.cpp.o
+.PHONY : benchmark_brute_force.cpp.o
 
-benchmark.i: benchmark.cpp.i
-.PHONY : benchmark.i
+benchmark_brute_force.i: benchmark_brute_force.cpp.i
+.PHONY : benchmark_brute_force.i
 
 # target to preprocess a source file
-benchmark.cpp.i:
-	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmark.cpp.i
-.PHONY : benchmark.cpp.i
+benchmark_brute_force.cpp.i:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/benchmark_brute_force.cpp.i
+.PHONY : benchmark_brute_force.cpp.i
 
-benchmark.s: benchmark.cpp.s
-.PHONY : benchmark.s
+benchmark_brute_force.s: benchmark_brute_force.cpp.s
+.PHONY : benchmark_brute_force.s
 
 # target to generate assembly for a file
-benchmark.cpp.s:
-	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmark.cpp.s
-.PHONY : benchmark.cpp.s
+benchmark_brute_force.cpp.s:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/benchmark_brute_force.cpp.s
+.PHONY : benchmark_brute_force.cpp.s
+
+benchmark_hnswlib.o: benchmark_hnswlib.cpp.o
+.PHONY : benchmark_hnswlib.o
+
+# target to build an object file
+benchmark_hnswlib.cpp.o:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/benchmark_hnswlib.cpp.o
+.PHONY : benchmark_hnswlib.cpp.o
+
+benchmark_hnswlib.i: benchmark_hnswlib.cpp.i
+.PHONY : benchmark_hnswlib.i
+
+# target to preprocess a source file
+benchmark_hnswlib.cpp.i:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/benchmark_hnswlib.cpp.i
+.PHONY : benchmark_hnswlib.cpp.i
+
+benchmark_hnswlib.s: benchmark_hnswlib.cpp.s
+.PHONY : benchmark_hnswlib.s
+
+# target to generate assembly for a file
+benchmark_hnswlib.cpp.s:
+	cd /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build && $(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/benchmark_hnswlib.cpp.s
+.PHONY : benchmark_hnswlib.cpp.s
 
 # Help Target
 help:
@@ -162,10 +200,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... benchmark"
-	@echo "... benchmark.o"
-	@echo "... benchmark.i"
-	@echo "... benchmark.s"
+	@echo "... benchmark_brute_force"
+	@echo "... benchmark_hnswlib"
+	@echo "... benchmark_brute_force.o"
+	@echo "... benchmark_brute_force.i"
+	@echo "... benchmark_brute_force.s"
+	@echo "... benchmark_hnswlib.o"
+	@echo "... benchmark_hnswlib.i"
+	@echo "... benchmark_hnswlib.s"
 .PHONY : help
 
 

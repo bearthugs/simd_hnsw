@@ -82,11 +82,13 @@ clean: benchmarks/clean
 # Directory level rules for directory benchmarks
 
 # Recursive "all" directory target.
-benchmarks/all: benchmarks/CMakeFiles/benchmark.dir/all
+benchmarks/all: benchmarks/CMakeFiles/benchmark_hnswlib.dir/all
+benchmarks/all: benchmarks/CMakeFiles/benchmark_brute_force.dir/all
 .PHONY : benchmarks/all
 
 # Recursive "codegen" directory target.
-benchmarks/codegen: benchmarks/CMakeFiles/benchmark.dir/codegen
+benchmarks/codegen: benchmarks/CMakeFiles/benchmark_hnswlib.dir/codegen
+benchmarks/codegen: benchmarks/CMakeFiles/benchmark_brute_force.dir/codegen
 .PHONY : benchmarks/codegen
 
 # Recursive "preinstall" directory target.
@@ -94,40 +96,73 @@ benchmarks/preinstall:
 .PHONY : benchmarks/preinstall
 
 # Recursive "clean" directory target.
-benchmarks/clean: benchmarks/CMakeFiles/benchmark.dir/clean
+benchmarks/clean: benchmarks/CMakeFiles/benchmark_hnswlib.dir/clean
+benchmarks/clean: benchmarks/CMakeFiles/benchmark_brute_force.dir/clean
 .PHONY : benchmarks/clean
 
 #=============================================================================
-# Target rules for target benchmarks/CMakeFiles/benchmark.dir
+# Target rules for target benchmarks/CMakeFiles/benchmark_hnswlib.dir
 
 # All Build rule for target.
-benchmarks/CMakeFiles/benchmark.dir/all:
-	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/depend
-	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles --progress-num=1,2 "Built target benchmark"
-.PHONY : benchmarks/CMakeFiles/benchmark.dir/all
+benchmarks/CMakeFiles/benchmark_hnswlib.dir/all:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/depend
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles --progress-num=3,4 "Built target benchmark_hnswlib"
+.PHONY : benchmarks/CMakeFiles/benchmark_hnswlib.dir/all
 
 # Build rule for subdir invocation for target.
-benchmarks/CMakeFiles/benchmark.dir/rule: cmake_check_build_system
+benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark_hnswlib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles 0
-.PHONY : benchmarks/CMakeFiles/benchmark.dir/rule
+.PHONY : benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule
 
 # Convenience name for target.
-benchmark: benchmarks/CMakeFiles/benchmark.dir/rule
-.PHONY : benchmark
+benchmark_hnswlib: benchmarks/CMakeFiles/benchmark_hnswlib.dir/rule
+.PHONY : benchmark_hnswlib
 
 # codegen rule for target.
-benchmarks/CMakeFiles/benchmark.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles --progress-num=1,2 "Finished codegen for target benchmark"
-.PHONY : benchmarks/CMakeFiles/benchmark.dir/codegen
+benchmarks/CMakeFiles/benchmark_hnswlib.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles --progress-num=3,4 "Finished codegen for target benchmark_hnswlib"
+.PHONY : benchmarks/CMakeFiles/benchmark_hnswlib.dir/codegen
 
 # clean rule for target.
-benchmarks/CMakeFiles/benchmark.dir/clean:
-	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/clean
-.PHONY : benchmarks/CMakeFiles/benchmark.dir/clean
+benchmarks/CMakeFiles/benchmark_hnswlib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/clean
+.PHONY : benchmarks/CMakeFiles/benchmark_hnswlib.dir/clean
+
+#=============================================================================
+# Target rules for target benchmarks/CMakeFiles/benchmark_brute_force.dir
+
+# All Build rule for target.
+benchmarks/CMakeFiles/benchmark_brute_force.dir/all:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/depend
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles --progress-num=1,2 "Built target benchmark_brute_force"
+.PHONY : benchmarks/CMakeFiles/benchmark_brute_force.dir/all
+
+# Build rule for subdir invocation for target.
+benchmarks/CMakeFiles/benchmark_brute_force.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark_brute_force.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles 0
+.PHONY : benchmarks/CMakeFiles/benchmark_brute_force.dir/rule
+
+# Convenience name for target.
+benchmark_brute_force: benchmarks/CMakeFiles/benchmark_brute_force.dir/rule
+.PHONY : benchmark_brute_force
+
+# codegen rule for target.
+benchmarks/CMakeFiles/benchmark_brute_force.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/claretian/Documents/Year_4/Semester_1/INFO4001/code/simd_hnsw/build/CMakeFiles --progress-num=1,2 "Finished codegen for target benchmark_brute_force"
+.PHONY : benchmarks/CMakeFiles/benchmark_brute_force.dir/codegen
+
+# clean rule for target.
+benchmarks/CMakeFiles/benchmark_brute_force.dir/clean:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/clean
+.PHONY : benchmarks/CMakeFiles/benchmark_brute_force.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

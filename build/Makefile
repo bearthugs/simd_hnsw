@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named benchmark
+# Target rules for targets named benchmark_hnswlib
 
 # Build rule for target.
-benchmark: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark
-.PHONY : benchmark
+benchmark_hnswlib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_hnswlib
+.PHONY : benchmark_hnswlib
 
 # fast build rule for target.
-benchmark/fast:
-	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/build
-.PHONY : benchmark/fast
+benchmark_hnswlib/fast:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_hnswlib.dir/build.make benchmarks/CMakeFiles/benchmark_hnswlib.dir/build
+.PHONY : benchmark_hnswlib/fast
+
+#=============================================================================
+# Target rules for targets named benchmark_brute_force
+
+# Build rule for target.
+benchmark_brute_force: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 benchmark_brute_force
+.PHONY : benchmark_brute_force
+
+# fast build rule for target.
+benchmark_brute_force/fast:
+	$(MAKE) $(MAKESILENT) -f benchmarks/CMakeFiles/benchmark_brute_force.dir/build.make benchmarks/CMakeFiles/benchmark_brute_force.dir/build
+.PHONY : benchmark_brute_force/fast
 
 # Help Target
 help:
@@ -137,7 +150,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... benchmark"
+	@echo "... benchmark_brute_force"
+	@echo "... benchmark_hnswlib"
 .PHONY : help
 
 

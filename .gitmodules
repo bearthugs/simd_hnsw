@@ -1,3 +1,6 @@
 [submodule "hnswlib"]
 	path = hnswlib
 	url = https://github.com/nmslib/hnswlib.git
+[submodule "libraries/faiss"]
+	path = libraries/faiss
+	url = https://github.com/facebookresearch/faiss.git
